@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Auto submit User001</title>
+    <script>
+      window.onload = function() {
+        const form = document.createElement("form");
+        form.action = "https://docs.google.com/forms/d/e/1FAIpQLSc_Tzdf03QpTpHX3v7kSfNnHkZqsV8E-EFzsaBtgYZyaliTKA/formResponse";
+        form.method = "POST";
+        form.target = "_self";
+
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = "entry.1409334988";
+        input.value = "User001";
+
+        form.appendChild(input);
+        document.body.appendChild(form);
+        form.submit();
+      };
+    </script>
+  </head>
+  <body>
+    <p>Registrando reutilización de User001...</p>
+  </body>
+</html>
